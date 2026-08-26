@@ -59,4 +59,4 @@ with gr.Blocks(title="Danilacious AI Assistant", theme=gr.themes.Soft()) as demo
     msg.submit(respond, [msg, chatbot], [chatbot]).then(lambda: "", None, msg)
     clear.click(lambda: [], None, chatbot, queue=False)
 
-demo.launch(server_name="0.0.0.0", server_port=7860)
+demo.launch(server_name="0.0.0.0", server_port=7860
