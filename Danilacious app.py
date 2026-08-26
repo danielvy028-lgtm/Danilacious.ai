@@ -80,7 +80,7 @@ if prompt := st.chat_input("Ask me anything about Danilacious..."):
                 ]
 
                 chat = client.chats.create(
-                    model="gemini-2.0-flash",
+                    model="gemini-3.6-flash",
                     config=types.GenerateContentConfig(
                         system_instruction=SYSTEM_PROMPT
                     ),
