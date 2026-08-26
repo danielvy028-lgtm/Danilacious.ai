@@ -91,7 +91,12 @@ if prompt := st.chat_input("Ask me anything about Danilacious..."):
                 answer = response.text
 
             except Exception as e:
-                answer = f"Sorry, something went wrong: {str(e)}"
+                error_str = str(e).lower()
+
+                if "429" in error_str or "resource_exhausted" in error_str or "quota" in error_str:
+                    answer = "⏳ I'm getting a lot of messages right now. Please wait about 15–20 seconds and try again. Thank you for your patience! 🍵"
+                else:
+                    answer = "Sorry, something went wrong. Please try again in a moment."
 
             st.markdown(answer)
 
