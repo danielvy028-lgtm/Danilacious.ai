@@ -10,11 +10,11 @@ client = OpenAI(
     base_url="https://generativelanguage.googleapis.com/v1beta/openai/"
 )
 
-MODEL = "gemini-2.0-flash"   # You can also try "gemini-1.5-flash" or "gemini-1.5-pro"
+MODEL = "gemini-3.6-flash"   # Using Gemini 3.6 Flash
 # ==============================
 
-st.set_page_config(page_title="Gemini Chatbot", page_icon="🤖", layout="centered")
-st.title("🤖 Gemini AI Chatbot")
+st.set_page_config(page_title="Gemini 3.6 Chatbot", page_icon="🤖", layout="centered")
+st.title("🤖 Gemini 3.6 Chatbot")
 st.write("Ask me anything!")
 
 # Initialize chat history
